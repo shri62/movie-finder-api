@@ -24,11 +24,11 @@
 const axios = require ('axios');
 
 // The OMDb address, stored once so both functions can share it
-const OMDB_URL = 'http://www.omdbapi.com/.'
+const OMDB_URL = 'http://www.omdbapi.com/'
 
-const serchMovies = async (res,res) => {
-    const { 'title' } = req.query;
-}
+const searchMovies = async (req, res) => {
+    const { title } = req.query;
+
 
   // If no title was given, stop and send a 400 error
 
