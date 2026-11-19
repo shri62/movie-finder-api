@@ -7,3 +7,7 @@ const { serchMovies, getMovieDetails } = require ('../controllers/movieControlle
 //GET /search: This will handle movie searches.
 //GET /movies/:id: This will fetch details for a specific movie.
 //runs search movies and 2 run getMovieDetails
+router.get('/search', serchMovies);
+router.get ('/movies/:id',searchMovies);
+//Export the router.
+module.export = router;
