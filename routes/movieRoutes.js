@@ -8,6 +8,6 @@ const { searchMovies, getMovieDetails } = require ('../controllers/movieControll
 //GET /movies/:id: This will fetch details for a specific movie.
 //runs search movies and 2 run getMovieDetails
 router.get('/search', searchMovies);
-router.get ('/movies/:id',searchMovies);
+router.get ('/movies/:id',getMovieDetails);
 //Export the router.
 module.exports = router;
